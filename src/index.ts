@@ -16,7 +16,7 @@ const s3 = new AWS.S3({
 
 const bucketName = process.env.S3_BUCKET_NAME;
 const videoKey = process.env.S3_VIDEO_KEY;
-const CHUNK_SIZE = 1048576
+const CHUNK_SIZE = 1048576 // 1MB
 
 if (!bucketName || !videoKey) {
   console.error('Missing required environment variables');
